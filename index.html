@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تطبيقي الأول</title>
+  <style>
+    body { font-family: Arial; padding: 24px; }
+    button { font-size: 18px; padding: 12px 16px; }
+    .count { font-size: 32px; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <h1>تطبيقي الأول 📱</h1>
+  <button id="btn">زيد العدد</button>
+  <div class="count" id="count">0</div>
+
+  <script>
+    let n = 0;
+    document.getElementById("btn").addEventListener("click", () => {
+      n++;
+      document.getElementById("count").textContent = n;
+    });
+  </script>
+</body>
+</html>
