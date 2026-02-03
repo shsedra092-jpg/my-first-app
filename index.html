@@ -14,19 +14,14 @@
     .count { font-size: 32px; margin-top: 16px; }
   </style>
 </head>
+
 <body>
   <h1>تطبيقي الأول 📱</h1>
   <button id="btn">زيد العدد</button>
   <div class="count" id="count">0</div>
 
-  <script>
-    // العداد
-    let n = 0;
-    document.getElementById("btn").addEventListener("click", () => {
-      n++;
-      document.getElementById("count").textContent = n;
-    });
+  <!-- كود الجافاسكربت صار بملف خارجي -->
+  <script src="app.js" defer></script>
+</body>
+</html>
 
-    // Offline (Service Worker)
-    if ("serviceWorker" in navigator) {
-      windo
