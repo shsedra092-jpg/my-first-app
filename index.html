@@ -4,6 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>تطبيقي الأول</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+
   <style>
     body { font-family: Arial; padding: 24px; }
     button { font-size: 18px; padding: 12px 16px; }
@@ -16,11 +20,13 @@
   <div class="count" id="count">0</div>
 
   <script>
+    // العداد
     let n = 0;
     document.getElementById("btn").addEventListener("click", () => {
       n++;
       document.getElementById("count").textContent = n;
     });
-  </script>
-</body>
-</html>
+
+    // Offline (Service Worker)
+    if ("serviceWorker" in navigator) {
+      windo
