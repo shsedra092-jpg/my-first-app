@@ -1,5 +1,6 @@
-const CACHE_NAME = "my-first-app-v3";
-const ASSETS = ["./", "./index.html", "./manifest.json", "./app.js"];
+const CACHE_NAME = "my-first-app-v4";
+const ASSETS = ["./", "./index.html", "./manifest.json", "./app.js", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png"];
+
 
 self.addEventListener("install", (event) => {
   self.skipWaiting();
